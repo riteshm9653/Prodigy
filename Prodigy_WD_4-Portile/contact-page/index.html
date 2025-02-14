@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Pages</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo-div">
+        <a href="#" id="logo"><span>RM </span>Master</a>
+      </div>
+
+      <nav class="nav-div">
+        <ul>
+          <li><a href="../index.html #Project">projects</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li>
+            <a href="./contact-page/index.html" id="contact">contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="" id="Wrapper">
+      <section class="contact-section">
+        <!--  contact -bg section 
+           -->
+        <div class="contact-bg">
+          <h3>Get in Touch with Us</h3>
+          <h2>Contact Us</h2>
+          <div class="line">
+            <div class="line-part"></div>
+            <div class="line-circle"></div>
+            <div class="line-part"></div>
+          </div>
+          <p class="text">
+            We're here to assist you with any inquiries or concerns. Feel free
+            to reach out, and we will respond as quickly as possible.
+          </p>
+          <button class="scroll-btn" onclick="scrollToContact()">
+            Learn More
+          </button>
+        </div>
+
+        <!--  contact body section -->
+        <div class="contact-body">
+          <!-- contact info section  -->
+          <div class="contact-info">
+            <!-- Mobile Number -->
+            <div class="info-item">
+              <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+              <div class="info-text">
+                <h4>Mobile Number</h4>
+                <p class="text">+91 1653249052</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="info-item">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <div class="info-text">
+                <h4>Email</h4>
+                <p class="text">Ritesh@123gmail.com</p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="info-item">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <div class="info-text">
+                <h4>Address</h4>
+                <p class="text">Mumbai, Borivali</p>
+              </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="info-item">
+              <span class="icon"><i class="fas fa-clock"></i></span>
+              <div class="info-text">
+                <h4>Opening Hours</h4>
+                <p class="text">Monday - Sunday (12:00 PM to 12:00 AM)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <!-- Form Section -->
+            <form id="contactForm" action="" method="POST">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Enter your first name"
+                  class="form-controller"
+                  required
+                  aria-required="true"
+                  aria-label="First Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Enter your last name"
+                  class="form-controller"
+                  required
+                  aria-required="true"
+                  aria-label="Last Name"
+                />
+              </div>
+
+              <!-- Contact Information -->
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  class="form-controller"
+                  required
+                  aria-required="true"
+                  aria-label="Email Address"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  class="form-controller"
+                  pattern="[0-9]{10}"
+                  required
+                  aria-required="true"
+                  aria-label="Phone Number"
+                  title="Enter a 10-digit phone number"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here"
+                  rows="5"
+                  class="form-controller"
+                  required
+                  aria-required="true"
+                  aria-label="Message"
+                ></textarea>
+              </div>
+
+              <!-- File Upload (Optional) -->
+              <div class="form-group">
+                <label for="fileUpload">Attach a File (Optional)</label>
+                <input
+                  type="file"
+                  id="fileUpload"
+                  name="fileUpload"
+                  class="form-controller"
+                  accept=".pdf, .docx, .jpg, .png"
+                />
+                <small>Accepted formats: PDF, DOCX, JPG, PNG</small>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group">
+                <button type="submit" class="send-btn">Send Message</button>
+              </div>
+            </form>
+
+            <!-- Image Section -->
+            <div class="form-image">
+              <img
+                src="./image/contact-png.png"
+                alt="Contact Us Illustration"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--  map section  -->
+
+        <div class="map-container">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6443.035002026999!2d72.85711931638981!3d19.366677842685284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af6dee46ff6b%3A0x6dfbf2411e42acd!2sSunteck%20MAXXWorld%20Naigaon!5e0!3m2!1sen!2sin!4v1735739536600!5m2!1sen!2sin"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="overlay">
+            <button class="zoom-button" id="zoomBtn">Zoom In</button>
+          </div>
+        </div>
+
+        <!--  footer section -->
+        <div class="contact-footer">
+          <h3>Follow us</h3>
+          <div class="social-link">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-youtube"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
